@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:plin_ball_sticker/plin_splash_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runApp(const PlinMyApp());
 }
 
@@ -21,4 +24,3 @@ class PlinMyApp extends StatelessWidget {
     );
   }
 }
-
