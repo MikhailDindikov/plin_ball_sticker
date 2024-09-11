@@ -10,7 +10,7 @@ class PlinVC: MSStickerBrowserViewController {
     func loadStickers() {
         var typepak = 0
         
-        if let userDefaultspak = UserDefaults(suiteName: "group.plin.stickers") {
+        if let userDefaultspak = UserDefaults(suiteName: "group.plin.packs") {
                     if (userDefaultspak.value(forKey: "plin_pack_tag") != nil) {
                         typepak = userDefaultspak.integer(forKey: "plin_pack_tag")
                     }

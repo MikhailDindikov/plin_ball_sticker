@@ -471,8 +471,8 @@
 				97C146EA1CF9000F007C117D /* Sources */,
 				97C146EB1CF9000F007C117D /* Frameworks */,
 				97C146EC1CF9000F007C117D /* Resources */,
-				874994302C90ABB0001A8820 /* Embed Foundation Extensions */,
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
+				874994302C90ABB0001A8820 /* Embed Foundation Extensions */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
 				D6C6ED2F8FBDA778DC25B0A1 /* [CP] Embed Pods Frameworks */,
 			);

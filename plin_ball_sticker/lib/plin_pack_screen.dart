@@ -27,7 +27,7 @@ class _PlinPackScreenState extends State<PlinPackScreen> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
-      await SharedPreferenceAppGroup.setAppGroup('group.plin.stickers');
+      await SharedPreferenceAppGroup.setAppGroup('group.plin.packs');
       final curSelGay =
           await SharedPreferenceAppGroup.getInt('plin_pack_tag') ?? 0;
       plinSelected.value = curSelGay == widget.plinTag;
@@ -133,14 +133,14 @@ class _PlinPackScreenState extends State<PlinPackScreen> {
               ),
               GestureDetector(
                 onTap: () async {
-                   if (!plinLoad.value) {
-                     if (!plinSelected.value) {
+                  if (!plinLoad.value) {
+                    if (!plinSelected.value) {
                       plinLoad.value = true;
                       try {
-                      await SharedPreferenceAppGroup.setAppGroup(
-                          'group.plin.stickers');
-                      await SharedPreferenceAppGroup.setInt(
-                          'plin_pack_tag', widget.plinTag);
+                        await SharedPreferenceAppGroup.setAppGroup(
+                            'group.plin.packs');
+                        await SharedPreferenceAppGroup.setInt(
+                            'plin_pack_tag', widget.plinTag);
                       } catch (e) {
                         log(e.toString());
                       }
